@@ -13,6 +13,21 @@ get_header();
 					}
 				}
 			?>
+	<div style="display: flex; align items: center; justify-content: center">
+
+			<?php
+				the_posts_pagination(
+					array(
+						// 'mid_size'  => 1,
+						'prev_text' => __( '<< Previous' ),
+						'next_text' => __( 'Next >>' ),
+						'show_all' => true,
+						'before_page_number' => ' ',
+    					'after_page_number'  => ''
+					)
+				);
+			?>
+	</div>
 
 	    </article>
 
