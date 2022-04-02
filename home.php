@@ -2,7 +2,7 @@
 get_header();
 ?>
 		<article class="content px-3 py-5 p-md-5">
-<p>weee</p>
+<p>home.php</p>
 			<?php
 				if( have_posts() ){
 

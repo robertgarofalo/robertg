@@ -6,6 +6,7 @@
 	</header>
 
 <?php 
+    the_post_thumbnail();
     the_content();
 ?>
 
