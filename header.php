@@ -62,6 +62,12 @@
 					<li class="list-inline-item"><a href="#"><i class="fab fa-codepen fa-fw"></i></a></li>
 				</ul>
 
+				<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+					<div id="sidebar-1">
+						<?php dynamic_sidebar('sidebar-1'); ?>
+					</div>
+				<?php } ?>
+
 			</div>
 		</nav>
     </header>

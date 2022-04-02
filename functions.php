@@ -47,5 +47,37 @@ wp_enqueue_script( 'robertg-script', get_template_directory_uri() . "/assets/js/
 
 add_action( 'wp_enqueue_scripts', 'robertg_register_scripts');
 
+
+function robertg_widget_areas(){
+
+    register_sidebar( 
+        array(
+            'name' => 'Sidebar Area Widget',
+            'id' => 'sidebar-1',
+            'description' => 'Sidebar Widget Area description goes here',
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => '',
+        )
+
+        );
+
+        register_sidebar(
+            array(
+                'name' => 'Footer Area Widget',
+                'id' => 'footer-1',
+                'description' => 'Footer Widget Area description goes here',
+                'before_title' => '',
+                'after_title' => '',
+                'before_widget' => '',
+                'after_widget' => '',
+            )
+            );
+
+    }
+    
+    add_action( 'widgets_init', 'robertg_widget_areas' );
+
 ?>
 
